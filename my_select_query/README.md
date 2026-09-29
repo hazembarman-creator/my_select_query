@@ -1,117 +1,47 @@
-# Welcome to My Nba Game Analysis
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
+# Welcome to My NBA Game Analysis
+A simple Python project that provides a lightweight way to filter NBA game data from a CSV string using a custom class called **MySelectQuery**.
 
 ***
 
 ## Task
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-   ## Installation
+The goal of this project is to implement a class **MySelectQuery** that:
 
-To use the `MySelectQuery` class, clone the repository and install Python 3.x if you don't have it already:
+- Accepts a CSV string as input  
+- Parses the CSV using Python’s built‑in `csv` module  
+- Allows filtering rows based on a specific column and value  
+- Returns matching rows as CSV‑formatted strings  
+- Provides a simple `.where(column, value)` method for querying  
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/yourrepo.git
-   ```
+This project introduces basic data querying logic without using external databases or heavy libraries.
 
-2. Install Python 3.x if it's not installed:
-   - For macOS and Linux, use `brew install python3` or download it from [python.org](https://www.python.org/downloads/).
-   - For Windows, download it from [python.org](https://www.python.org/downloads/).
-
-3. No additional dependencies are required for this project, as it only uses Python’s standard libraries (`csv` and `io`).
-
-
-## Installation
-
-To use the `MySelectQuery` class, clone the repository and install Python 3.x if you don't have it already:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/yourrepo.git
-   ```
-
-2. Install Python 3.x if it's not installed:
-   - For macOS and Linux, use `brew install python3` or download it from [python.org](https://www.python.org/downloads/).
-   - For Windows, download it from [python.org](https://www.python.org/downloads/).
-
-3. No additional dependencies are required for this project, as it only uses Python’s standard libraries (`csv` and `io`).
-
-
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-
+***
 
 ## Description
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
+`MySelectQuery` loads a CSV string into memory and converts it into rows and headers.  
+The `.where()` method allows users to filter rows by checking whether the value in a specific column matches the desired value.
 
+### How it works:
+1. The CSV string is parsed using `csv.reader`  
+2. The first row is treated as the header  
+3. Each subsequent row is stored as a list  
+4. When `.where(column, value)` is called:
+   - The class finds the column index  
+   - Iterates through all rows  
+   - Returns only the rows where the value matches  
+   - Outputs results as CSV‑formatted strings  
 
-## Installation
+### Features:
+- No external dependencies  
+- Fast filtering using Python’s standard library  
+- Works entirely in memory  
+- Easy to extend for more complex queries  
 
-To use the `MySelectQuery` class, clone the repository and install Python 3.x if you don't have it already:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/yourrepo.git
-   ```
-
-2. Install Python 3.x if it's not installed:
-   - For macOS and Linux, use `brew install python3` or download it from [python.org](https://www.python.org/downloads/).
-   - For Windows, download it from [python.org](https://www.python.org/downloads/).
-
-3. No additional dependencies are required for this project, as it only uses Python’s standard libraries (`csv` and `io`).
-
-
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-
-
-## Installation
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
+***
 
 ## Installation
+To use the **MySelectQuery** class, follow these steps:
 
-To use the `MySelectQuery` class, clone the repository and install Python 3.x if you don't have it already:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/yourrepo.git
-   ```
-
-2. Install Python 3.x if it's not installed:
-   - For macOS and Linux, use `brew install python3` or download it from [python.org](https://www.python.org/downloads/).
-   - For Windows, download it from [python.org](https://www.python.org/downloads/).
-
-3. No additional dependencies are required for this project, as it only uses Python’s standard libraries (`csv` and `io`).
-
-
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-
-
-The goal of this project is to create a class `MySelectQuery` that takes in a CSV string and allows the user to filter rows based on a specified column and value. The class utilizes Python’s `csv` module to parse the data and efficiently filter through the records. The class method `where()` allows users to query the data and retrieve matching rows as strings.
-
-
-## Usage
-## Installation
-
-To use the `MySelectQuery` class, clone the repository and install Python 3.x if you don't have it already:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/yourrepo.git
-   ```
-
-2. Install Python 3.x if it's not installed:
-   - For macOS and Linux, use `brew install python3` or download it from [python.org](https://www.python.org/downloads/).
-   - For Windows, download it from [python.org](https://www.python.org/downloads/).
-
-3. No additional dependencies are required for this project, as it only uses Python’s standard libraries (`csv` and `io`).
-
-``
-./my_project argument1 argument2
-```
-
-### The Core Team
-
-
-<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
-<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
